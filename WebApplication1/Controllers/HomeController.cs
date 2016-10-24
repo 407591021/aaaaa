@@ -41,8 +41,6 @@ namespace WebApplication1.Controllers
             string[] data = new string[] { "北京再发霾黄色预警", "云南老人高速上砸石拦车：为去杭州看望外孙" , "西安榆林公交卡可刷卡消费" };
             ViewBag.data = data;
             ViewBag.page = page;
-            ViewData["data"] = data;
-            ViewData.Model = data;
 
             return View();
         }
@@ -53,17 +51,15 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+        /// 添加新闻 
         public ActionResult Add()
         {
-
-            return View();
+           return View();
         }
         public ActionResult Save(string title,string content)
         {
-
             ViewBag.Title = title;
             ViewBag.Content = content;
-
             return View();
         }
     }

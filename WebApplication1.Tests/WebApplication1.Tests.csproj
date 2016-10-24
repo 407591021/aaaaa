@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F396519B-D98D-45F1-8F51-96352FBA0766}</ProjectGuid>
+    <ProjectGuid>{7C7A952A-9168-4F54-BC9B-633C6DD2F4D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebApplication1.Tests</RootNamespace>
@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebApplication1\WebApplication1.csproj">
-      <Project>{5C9FB01E-DE2B-4944-9CB4-14B44303E9C9}</Project>
+      <Project>{653956BF-2A51-45E1-89F9-B9864FE11D7E}</Project>
       <Name>WebApplication1</Name>
     </ProjectReference>
   </ItemGroup>

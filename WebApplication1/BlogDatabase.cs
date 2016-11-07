@@ -5,8 +5,9 @@
      using System;
      using System.Data.Entity;
      using System.Linq;
- 
-     public class BlogDatabase : DbContext
+    using System.ComponentModel.DataAnnotations;
+
+    public class BlogDatabase : DbContext
      {
          public BlogDatabase()
              : base("name=BlogDatabase")
@@ -60,17 +61,20 @@
          public int Id { get; set; }
  
          public int BlogId { get; set; }
- 
-         /// <summary>
-         /// 标题
-         /// </summary>
-         public string Subject { get; set; }
- 
-         /// <summary>
-         /// 文章内容
-         /// </summary>
- 
-         public string Body { get; set; }
+
+        /// <summary>
+        /// 标题
+        /// </summary>
+        [Required]
+         [StringLength(maximumLength: 20, MinimumLength = 5)]
+        public string Subject { get; set; }
+
+        /// <summary>
+        /// 文章内容
+        /// </summary>
+         [Required]
+
+        public string Body { get; set; }
  
          /// <summary>
          /// 创建时间

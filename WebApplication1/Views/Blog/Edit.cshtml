@@ -18,6 +18,7 @@
             
             <td>
                                 @Html.TextBox("Subject")
+                @Html.ValidationMessageFor(o => o.Subject)
                 
             </td>
             
@@ -29,6 +30,7 @@
             
             <td>
                                @Html.TextArea("Body", new { style = "width:600px; max-width:1000px;" })
+                @Html.ValidationMessageFor(o => o.Body)
                 
             </td>
             
